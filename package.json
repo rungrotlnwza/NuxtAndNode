@@ -13,6 +13,6 @@
         "start": "npm run start --workspace=node"
     },
     "devDependencies": {
-        "concurrently": "^8.0.0" // สำหรับรัน frontend และ backend พร้อมกัน
+        "concurrently": "^8.0.0"
     }
 }
