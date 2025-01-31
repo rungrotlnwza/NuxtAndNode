@@ -1,1 +1,6 @@
-hello
+<template>
+  <div>
+    <NuxtRouteAnnouncer />
+    <NuxtWelcome />
+  </div>
+</template>
