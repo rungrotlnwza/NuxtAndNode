@@ -31,3 +31,7 @@ git add .
 git commit -m "Your commit message"
 git push
 ```
+# สำหรับ run ทั้ง server พร้อมกัน
+```bash
+npm run devall
+```

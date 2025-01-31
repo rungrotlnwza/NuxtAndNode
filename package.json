@@ -8,7 +8,7 @@
     ],
     "scripts": {
         "install-all": "npm install",
-        "dev": "concurrently \"npm run dev --workspace=vue\" \"npm run dev --workspace=node\"",
+        "devall": "concurrently \"npm run dev --workspace=vue\" \"npm run dev --workspace=node\"",
         "build": "npm run build --workspace=vue",
         "start": "npm run start --workspace=node"
     },
