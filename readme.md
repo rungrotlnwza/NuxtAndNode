@@ -15,13 +15,19 @@
 
 ขั้นตอนการติดตั้งโปรเจ็ค:
 
-```bash
+
 # สำหรับการติดตั้งโปรเจ็คครั้งแรกในโฟเดอร์ root(โฟเดอร์หลักที่ไม่เกี่ยวกับ node และ vue)
+```bash
 npm i
+```
 # สำหรับการโหลดโปรเจ็คหลังจาก clone แล้ว
+```bash
 git pull
+```
 # สำหรับนำ code ขึ้น git และทำให้ code บนเครื่องเป็นเวอร์ชั่นล่าสุด
+```bash
 git pull
 git add .
 git commit -m "Your commit message"
 git push
+```
