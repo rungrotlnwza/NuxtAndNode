@@ -1,5 +1,5 @@
 # ชื่อโปรเจ็ค
-ืnuxt and node project
+nuxt and node project
 <!-- # อย่าหาทำนะแก้ชื่อโปรเจ็คเป็นกางในอ่ะ -->
 
 ## ภาพรวม (Overview)
