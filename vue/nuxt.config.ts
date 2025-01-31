@@ -4,16 +4,15 @@ export default defineNuxtConfig({
       link: [
         {
           rel: 'stylesheet',
-          href: 'https://cdn.jsdelivr.net/npm/bootstrap/css/bootstrap.min.css'
+          href: '/bootstrap/css/bootstrap.min.css' // Path to local Bootstrap CSS
         }
       ],
       script: [
         {
-          src: 'https://cdn.jsdelivr.net/npm/bootstrap/js/bootstrap.bundle.min.js',
-          tagPosition: 'bodyClose'
+          src: '/bootstrap/js/bootstrap.bundle.min.js', // Path to local Bootstrap JS
+          tagPosition: 'bodyClose' // Ensures the script is loaded at the end of the body
         }
       ]
     }
   },
-  css: ['@/assets/main.css']
-})
+});
