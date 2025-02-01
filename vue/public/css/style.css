@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Kanit", serif;
+    /* font-weight: 100; */
+    font-style: normal;
+}
+
+body {
+    background: #333;
+}
+
+.navbar {
+    height: 30px;
+}
+
+.vh-90 {
+    height: 90vh;
+}
+
+.text-pink {
+    color: #ff69b4;
+    /* สีชมพูแบบ HEX */
+}
+
+.text-pink::placeholder {
+    color: #ff69b4;
+}
+
+.btn-width-100 {
+    width: 100%;
+}
+
+.btn-pink {
+    background: #ff69b4;
+}
+
+.profile {
+    border-radius: 50%;
+    height: 200px;
+}
+
+.btn-edit {
+    height: 30px;
+}
+
+.pink-light {
+    background-color: #ff69b4;
+}
