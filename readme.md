@@ -9,7 +9,7 @@ nuxt and node project
 ## คุณสมบัติ (Features)
 
 - เพิ่มฟังชั่นที่ทำก่อน commit ด้วยนิว
-- 
+- เพิ่มส่วนของ html css ปกติ
 
 ## วิธีการติดตั้ง (Installation)
 
