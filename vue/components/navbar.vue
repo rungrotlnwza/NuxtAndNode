@@ -1,27 +1,59 @@
 <template>
-    <div>
-        <!-- Bootstrap Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/">My Nuxt App</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <NuxtLink class="nav-link" to="/">Home</NuxtLink>
-                        </li>
-                        <li class="nav-item">
-                            <NuxtLink class="nav-link" to="/about">About</NuxtLink>
-                        </li>
-                        <li class="nav-item">
-                            <NuxtLink class="nav-link" to="/contact">Contact</NuxtLink>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="/" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="/feature" class="nav-link">Feature</a>
+            </li>
+            <li class="nav-item">
+              <a href="/about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="/contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <ul v-if="!islogin" class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="/login" class="nav-link">Login</a>
+            </li>
+            <li class="nav-item">
+              <a href="/register" class="nav-link">Register</a>
+            </li>
+          </ul>
+          <ul v-if="islogin" class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="/dashboard" class="nav-link">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a href="/logout" class="nav-link">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
 </template>
+
+<script setup>
+let islogin = false;
+</script>
