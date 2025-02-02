@@ -1,10 +1,13 @@
 const express = require('express');
 const router = express.Router();
-const path = require('path');
 
-// Route สำหรับ /api
+// Example route
 router.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../AP/example'));
+    res.send('API is working');
 });
+
+// Ensure the required module exports a function
+const registerRoute = require('../API/register');
+router.post('/register', registerRoute);
 
 module.exports = router;
