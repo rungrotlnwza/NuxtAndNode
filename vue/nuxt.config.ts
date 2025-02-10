@@ -16,6 +16,9 @@ export default defineNuxtConfig({
         {
           src: '/bootstrap/js/bootstrap.bundle.min.js', // Path to local Bootstrap JS
           tagPosition: 'bodyClose' // Ensures the script is loaded at the end of the body
+        },
+        {
+          src: '/js/script.js'
         }
       ]
     }

@@ -8,21 +8,20 @@
         <!-- <img src="https://via.placeholder.com/100" alt="Profile Picture" /> -->
         <h2 class="sidebar-title">Dashboard</h2>
         <ul class="sidebar-menu">
-          <li><a href="#" class="active">Dashboard</a></li>
-          <li><a href="#">Users</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Settings</a></li>
-          <li><a href="#">My Account</a></li>
+          <li><a href="#" class="tablinks" onclick="openInfo(event, 'accountinfo')">My Account</a></li>
+          <li><a href="#" class="tablinks" onclick="openInfo(event, 'productinfo')">Products</a></li>
+          <li><a href="#" class="tablinks" onclick="openInfo(event, 'London')">Satting</a></li>
         </ul>
       </div>
 
       <!-- Main Content -->
-      <div class="main-content">
-        <!-- Header -->
-        <div class="account-header">
+      
+      <div id="accountinfo" class="main-content">
+        
+        <!-- <div class="account-header">
           <h1>My Account</h1>
           <p>จัดการข้อมูลบัญชีของคุณ</p>
-        </div>
+        </div> -->
 
         <!-- Admin Account -->
         <div class="account-info">
@@ -39,28 +38,23 @@
           </div>
         </div>
 
-        <!-- Skills Section -->
-        <!-- <div class="account-info">
-          <h2>ทักษะ (Skills)</h2>
-          <div class="account-card">
-            <div class="skills-list">
-              <span class="skill-badge">HTML</span>
-              <span class="skill-badge">CSS</span>
-              <span class="skill-badge">JavaScript</span>
-              <span class="skill-badge">Bootstrap</span>
-              <span class="skill-badge">React</span>
-              <span class="skill-badge">Node.js</span>
-            </div>
-          </div>
-        </div> -->
+        
 
+        
         <!-- Logout Button -->
         <button class="btn-logout">Logout</button>
       </div>
+
+      <div id="productinfo" class="main-content">
+        <h2>pussy</h2>
+      </div>
+
+
     </div>
   </div>
 </template>
 <style scoped>
+
 /* body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -196,4 +190,26 @@
 .btn-logout:hover {
   background-color: #c82333;
 }
+/* test */
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
+/* test */
 </style>
+
